@@ -1,0 +1,98 @@
+::selection {
+  background-color: black;
+  color: white;
+}
+* {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.muli {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
+
+nav {
+  background-color: white;
+}
+nav li:hover a {
+  text-decoration: underline;
+  text-underline-offset: 11px;
+}
+i {
+  padding: 12px 20px;
+}
+
+/* carousel */
+.carousel img {
+  height: 80dvh;
+  object-position: center;
+  object-fit: cover;
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
+.carousel-span {
+  display: none;
+}
+.carousel:hover .carousel-span {
+  display: block;
+}
+
+/* numbers */
+.numbers {
+  background: url(https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg)
+    fixed 100%;
+  background-size: cover;
+  background-position: center;
+}
+.numbers .oswald,
+.about i,
+.carousel h1 {
+  font-size: 2.5rem !important;
+}
+
+/* team */
+.team-member:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* contact */
+.contact {
+  background: url(https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg)
+    fixed 100%;
+  background-size: cover;
+  background-position: center;
+}
+.contact button,
+.booking button,
+.about button,
+.carousel button {
+  letter-spacing: 0.35em;
+}
+/* footer */
+a.link-underline-primary:hover {
+  text-decoration-color: var(--bs-primary) !important;
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    background-color: #1089ff !important;
+  }
+  nav a {
+    color: white !important;
+  }
+}
